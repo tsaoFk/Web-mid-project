@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+
+.navbar {
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    
+    position: relative;
+}
+
+.navbar li a, .navbar .dropbtn {
+    display: block;
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar li a:hover, .navbar .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.navbar .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: #111;
+}
+
+.navbar .dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+
+
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.logo {
+    max-width: 50%;
+    border-radius: 5px;
+}
+
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+.product-type{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:65px;
+    text-shadow:3px 3px 5px dimgrey;
+    color:cadetblue;
+}
+.product-image {
+    position: relative;
+    top: 0px;
+    left:0px;
+    max-width: 50%;
+    border-radius: 5px;
+}
+
+.product-details {
+    margin-top: 20px;
+}
+
+.product-title {
+    color: darkcyan;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-description {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.product-price {
+    text-shadow:1px 1px 2px dimgrey;
+    font-size: 20px;
+    color:cornflowerblue;
+    margin: 10px 0;
+}
+
+.buybutton {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: box-shadow 0.5s ease;
+}
+.buybutton:hover {
+    box-shadow: 0 4px 8px black;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+.backbutton{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: box-shadow 0.5s ease;
+}
+
+.backbutton:hover {
+    box-shadow: 0 4px 8px black;
+}
+.finance-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.finance-table th, .finance-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.finance-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.finance-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.finance-table tfoot td {
+    font-weight: bold;
+    background-color: #f1f1f1;
+}
+
+.submitbutton {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: box-shadow 0.5s ease;
+}
+
+.submitbutton:hover{
+    box-shadow: 0 4px 8px black;
+}
+
+.personnel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+    background-color: #fff;
+}
+
+.team-member {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1.5em;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.team-member h3 {
+    margin-top: 1em;
+    font-size: 20px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #666;
+}
+
+.team-member .social-links {
+    margin-top: 1em;
+}
+
+.team-member .social-links a {
+    margin: 0 5px;
+    color: #0000FF;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.team-member .social-links a:hover {
+    color: #e63946;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+    transition: width 0.3s ease;
+    overflow-x: hidden;
+}
+
+/* 側邊選單項目 */
+.sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color:turquoise;
+    display: block;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+.sidebar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: turquoise;
+    transition: width 0.3s ease;
+}
+
+/* 項目 hover 效果 */
+.sidebar a:hover {
+    background-color: #575757;
+}
+.sidebar a:hover::after {
+    width: 100%;
+}
+/* 主內容區域 */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* 折疊按鈕 */
+.toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/*輸入列*/
+.short-input-problem{
+    width: 100px; 
+}
+.short-input-name {
+    width: 75px;
+}
+.short-input-email {
+    width: 150px;
+}
+
+.calendar {
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+	margin: 20px auto;
+}
+
+
+.calendar-header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px;
+}
+
+/* 星期名稱 */
+.day-name {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+/* 日期格子 */
+.day {
+    height: 60px;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+}
+
+/* 當前日期 */
+.day.current {
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* 懸停效果 */
+.day:hover {
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* 空白格子 */
+.day.empty {
+    background-color: #f9f9f9;
+    cursor: default;
+}
+/*刪除列表*/
+ul.demo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.event {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #d9534f; 
+}
+#content1{
+	padding:50px;
+	display: flex;
+	align-items: flex-start;
+}
+
+
+#aboutcompany1, #contactUs{
+	margin-left:15%;
+	margin-right:10%;
+	font-size:20px;
+}
+
+#content-img1{
+	float:right;
+	margin-right:15%;
+	margin-top:0%;
+	width: 270px;
+
+	border-radius:50%;
+	border:1px dashed gray;
+}
